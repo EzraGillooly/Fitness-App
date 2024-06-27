@@ -16,21 +16,21 @@ class CategoryModel{
 
     categories.add( // adds to list
       CategoryModel(
-        name: 'Salad', 
+        name: 'Fruit Dishes', 
         iconPath: 'assets/icons/plate.svg', 
         boxColor: Color(0xff92A3FD)
         )
     );
     categories.add( // adds to list
       CategoryModel(
-        name: 'Cake', 
+        name: 'Egg Dishes', 
         iconPath: 'assets/icons/pancakes.svg', 
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
       CategoryModel(
-        name: 'Pie', 
+        name: 'Pancakes and Waffles', 
         iconPath: 'assets/icons/pie.svg', 
         boxColor: Color(0xff92A3FD)
         )
@@ -38,6 +38,20 @@ class CategoryModel{
     categories.add( // adds to list
       CategoryModel(
         name: 'Smoothies', 
+        iconPath: 'assets/icons/orange-snacks.svg', 
+        boxColor: Color(0xffC58BF2)
+        )
+    );
+    categories.add( // adds to list
+      CategoryModel(
+        name: 'Sandwiches and Wraps', 
+        iconPath: 'assets/icons/orange-snacks.svg', 
+        boxColor: Color(0xff92A3FD)
+        )
+    );
+    categories.add( // adds to list
+      CategoryModel(
+        name: 'Meats and Proteins', 
         iconPath: 'assets/icons/orange-snacks.svg', 
         boxColor: Color(0xffC58BF2)
         )
