@@ -1,13 +1,20 @@
+import 'package:fitness/CutPages/eggs_page.dart';
+import 'package:fitness/CutPages/fruit_page.dart';
+import 'package:fitness/CutPages/meats_page.dart';
+import 'package:fitness/CutPages/pancakes_page.dart';
+import 'package:fitness/CutPages/smoothies_page.dart';
 import 'package:flutter/material.dart';
 
 class CategoryModel{
   String name;
   String iconPath; // Icon needs to be string to access path
+  var pagePath;
   Color boxColor;
 
   CategoryModel({ // Constructor
     required this.name,
     required this.iconPath,
+    required this.pagePath,
     required this.boxColor,
   });
 
@@ -18,6 +25,7 @@ class CategoryModel{
       CategoryModel(
         name: 'Fruit Dishes', 
         iconPath: 'assets/icons/plate.svg', 
+        pagePath: cutFruitDishesPage(),
         boxColor: Color(0xff92A3FD)
         )
     );
@@ -25,6 +33,7 @@ class CategoryModel{
       CategoryModel(
         name: 'Egg Dishes', 
         iconPath: 'assets/icons/pancakes.svg', 
+        pagePath: cutEggDishesPage(),
         boxColor: Color(0xffC58BF2)
         )
     );
@@ -32,6 +41,7 @@ class CategoryModel{
       CategoryModel(
         name: 'Pancakes and Waffles', 
         iconPath: 'assets/icons/pie.svg', 
+        pagePath: cutPancakesPage(),
         boxColor: Color(0xff92A3FD)
         )
     );
@@ -39,21 +49,16 @@ class CategoryModel{
       CategoryModel(
         name: 'Smoothies', 
         iconPath: 'assets/icons/orange-snacks.svg', 
+        pagePath: cutSmoothiesPage(),
         boxColor: Color(0xffC58BF2)
-        )
-    );
-    categories.add( // adds to list
-      CategoryModel(
-        name: 'Sandwiches and Wraps', 
-        iconPath: 'assets/icons/orange-snacks.svg', 
-        boxColor: Color(0xff92A3FD)
         )
     );
     categories.add( // adds to list
       CategoryModel(
         name: 'Meats and Proteins', 
         iconPath: 'assets/icons/orange-snacks.svg', 
-        boxColor: Color(0xffC58BF2)
+        pagePath: cutMeatsPage(),
+        boxColor: Color(0xff92A3FD)
         )
     );
 

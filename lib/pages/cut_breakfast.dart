@@ -30,7 +30,7 @@ class _BreakfastPageState extends State<BreakfastPage> {
       backgroundColor: Colors.white,
       body: ListView(
         children: [
-          _searchField(), // Widget for search field
+          // _searchField(), // Widget for search field
           const SizedBox(height: 40,), // Seperation box to put space between search bar and category text
           _categoriesSection(), // method for category scroll section
           const SizedBox(height: 40),
@@ -70,6 +70,18 @@ class _BreakfastPageState extends State<BreakfastPage> {
               itemBuilder: (context, index) {
                 return Container(
                   height: 100,
+                  decoration: BoxDecoration(
+                    color: popularDiets[index].boxIsSelected ? Colors.white : Colors.transparent,
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: popularDiets[index].boxIsSelected ? [
+                      BoxShadow(
+                        color: const Color(0xff1D1617).withOpacity(0.07),
+                        offset: const Offset(0,10),
+                        blurRadius: 40,
+                        spreadRadius: 0
+                      )
+                    ] : []
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -112,18 +124,6 @@ class _BreakfastPageState extends State<BreakfastPage> {
                         ),
                       ),
                     ],
-                  ),
-                  decoration: BoxDecoration(
-                    color: popularDiets[index].boxIsSelected ? Colors.white : Colors.transparent,
-                    borderRadius: BorderRadius.circular(16),
-                    boxShadow: popularDiets[index].boxIsSelected ? [
-                      BoxShadow(
-                        color: const Color(0xff1D1617).withOpacity(0.07),
-                        offset: const Offset(0,10),
-                        blurRadius: 40,
-                        spreadRadius: 0
-                      )
-                    ] : []
                   ),
                 );
               },
@@ -179,51 +179,35 @@ class _BreakfastPageState extends State<BreakfastPage> {
                               fontWeight: FontWeight.w400
                             ),
                           ),
-                          GestureDetector(
-                            onTap: () {
-                showModalBottomSheet(
-                  context: context, 
-                  builder: (BuildContext context){
-                    return SizedBox(
-                      height: 800,
-                      child: Center(
-                        child: ElevatedButton(
-                          child: const Text('Close'),
-                          onPressed: (){
-                            Navigator.pop(context);
-                          },
+                    GestureDetector(
+                      onTap: () {
+                        
+                      },
+                      child: Container(
+                        // Gradient box in bottom of reccomendation box
+                        height: 45,
+                        width: 130,
+                        decoration: BoxDecoration(
+                            gradient: LinearGradient(colors: [
+                              diets[index].viewIsSelected
+                                  ? const Color(0xff9dceff)
+                                  : const Color.fromARGB(255, 217, 186, 241),
+                              diets[index].viewIsSelected
+                                  ? const Color(0xff92a3fd)
+                                  : const Color(0xffC58BF2)
+                            ]),
+                            borderRadius: BorderRadius.circular(50)),
+                        child: Center(
+                          child: Text('View',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 14)),
                         ),
                       ),
-                    );
-                  }
-                );
-              },
-                          child: Container( // Gradient box in bottom of reccomendation box
-                            height: 45,
-                            width: 130,
-                            child: Center(
-                              child: Text(
-                                'View',
-                                style: TextStyle(
-                                  color: diets[index].viewIsSelected ? Colors.white : const Color(0xffC58BF2),
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 14
-                                )
-                              ),
-                            ),
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  diets[index].viewIsSelected ? const Color(0xff9dceff) : Colors.transparent,
-                                  diets[index].viewIsSelected ? const Color(0xff92a3fd) : Colors.transparent 
-                                ]
-                              ),
-                              borderRadius: BorderRadius.circular(50)
-                            ),
-                          ),
-                          ),
-                        ],
-                      ),
+                    ),
+                  ],
+                ),
                     );
                   },
                    separatorBuilder: (context, index) => const SizedBox(width:25,), 
@@ -252,26 +236,8 @@ class _BreakfastPageState extends State<BreakfastPage> {
               ),
             ),
             const SizedBox(height: 15,),
-            GestureDetector(
-              onTap: () {
-                showModalBottomSheet(
-                  context: context, 
-                  builder: (BuildContext context){
-                    return SizedBox(
-                      height: 400,
-                      child: Center(
-                        child: ElevatedButton(
-                          child: const Text('Close'),
-                          onPressed: (){
-                            Navigator.pop(context);
-                          },
-                        ),
-                      ),
-                    );
-                  }
-                );
-              },
-            child: Container(  // Container for categories
+                          
+             Container(  // Container for categories
               alignment: Alignment.center,
               height: 120,
               child: ListView.separated( // Adds horizontal list
@@ -279,8 +245,7 @@ class _BreakfastPageState extends State<BreakfastPage> {
                 scrollDirection: Axis.horizontal, // changes scroll to horizontal
                 padding: const EdgeInsets.only(left: 20, right:20),
                 separatorBuilder: (context, index) => const SizedBox(width:25), // sets seperator builder to a SizedBox widget
-                itemBuilder: (context, index) {    
-                                
+                itemBuilder: (context, index) {                  
                   return Container(
                     
                     width: 100,
@@ -288,35 +253,40 @@ class _BreakfastPageState extends State<BreakfastPage> {
                       color: categories[index].boxColor.withOpacity(0.3), //Adjust color opacity
                       borderRadius: BorderRadius.circular(16)
                     ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly, // For even space between text and icon
-                      children: [
-                        
-                        Container(
-                          width: 50,
-                          height: 50,
-                          decoration: const BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => categories[index].pagePath,));
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly, // For even space between text and icon
+                        children: [
+                          
+                          Container(
+                            width: 50,
+                            height: 50,
+                            decoration: const BoxDecoration(
+                              color: Colors.white,
+                              shape: BoxShape.circle
+                            ),
+                            child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: SvgPicture.asset(categories[index].iconPath), // Puts Icons within Circles
+                            ),
                           ),
-                          child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: SvgPicture.asset(categories[index].iconPath), // Puts Icons within Circles
+                          Padding( // Fits the words properly under the icon and allows them to fit
+                            padding: const EdgeInsets.only(left:9.0, right: 9.0, bottom: 9.0),
+                            child: Text(
+                              textAlign: TextAlign.center,
+                              categories[index].name,
+                              style: const TextStyle(                             
+                                fontWeight: FontWeight.w400,
+                                color: Colors.black,
+                                fontSize: 13
+                              )
+                            ),
                           ),
-                        ),
-                        Padding( // Fits the words properly under the icon and allows them to fit
-                          padding: const EdgeInsets.only(left:9.0, right: 9.0, bottom: 9.0),
-                          child: Text(
-                            textAlign: TextAlign.center,
-                            categories[index].name,
-                            style: const TextStyle(                             
-                              fontWeight: FontWeight.w400,
-                              color: Colors.black,
-                              fontSize: 13
-                            )
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                     
                   );
@@ -324,64 +294,64 @@ class _BreakfastPageState extends State<BreakfastPage> {
                 }, 
               ),
             ),
-            ),
+            
           ]
         );
   }
 
-  Container _searchField() {
-    return Container(
-          margin: const EdgeInsets.only(top:40, left:20, right:20), // Spacing from app bar
-          decoration: BoxDecoration( // Shadow around search bar
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0xff1D1617).withOpacity(0.11),
-                blurRadius: 40,
-                spreadRadius: 0.0 
-              )
-            ]
-          ),
-          child: TextField( // Search bar
-            decoration: InputDecoration(
-              filled: true,
-              fillColor: Colors.white,
-              contentPadding: const EdgeInsets.all(15), // Shortens the search bar height
-              hintText: 'Search Pancake', // Search example text
-              hintStyle: const TextStyle(
-                color: Color(0xffDDDADA),
-                fontSize: 14
-              ),
-              prefixIcon: Padding(// Adds search icon and adjusts size, prefix puts on left                    
-                  padding: const EdgeInsets.all(12.0),
-                  child: SvgPicture.asset('assets/icons/Search.svg'),
-                ),
-                // suffixIcon: Container( // Needs container so other object dont get blocked by the row
-                //   width: 100,
-                //   child: IntrinsicHeight( // Must wrap row inside IntrinsicHeight in order to use divider                 
-                //     child: Row( // Row sorts horizontally and will push the line and filter icons together
-                //       mainAxisAlignment:
-                //           MainAxisAlignment.end, // .end pushes all to the right
-                //       children: [
-                //         const VerticalDivider(  //Line next to filter icon                                            
-                //           color: Colors.black,
-                //           indent: 10, // Space from top
-                //           endIndent: 10, // Space from bottom
-                //           thickness: 0.1,
-                //         ),
-                //         Padding( // Adds filter icon and adjust size, suffix puts on right                       
-                //           padding: const EdgeInsets.all(8.0),
-                //           child: SvgPicture.asset('assets/icons/Filter.svg'),
-                //         ),
-                //       ],
-                //     ),
-                //   ),
-                // ),
-                border: OutlineInputBorder(// Rounded edges                      
-                    borderRadius: BorderRadius.circular(15),
-                    borderSide: BorderSide.none)),
-          ),
-        );
-  }
+  // Container _searchField() {
+  //   return Container(
+  //         margin: const EdgeInsets.only(top:40, left:20, right:20), // Spacing from app bar
+  //         decoration: BoxDecoration( // Shadow around search bar
+  //           boxShadow: [
+  //             BoxShadow(
+  //               color: const Color(0xff1D1617).withOpacity(0.11),
+  //               blurRadius: 40,
+  //               spreadRadius: 0.0 
+  //             )
+  //           ]
+  //         ),
+  //         child: TextField( // Search bar
+  //           decoration: InputDecoration(
+  //             filled: true,
+  //             fillColor: Colors.white,
+  //             contentPadding: const EdgeInsets.all(15), // Shortens the search bar height
+  //             hintText: 'Search Pancake', // Search example text
+  //             hintStyle: const TextStyle(
+  //               color: Color(0xffDDDADA),
+  //               fontSize: 14
+  //             ),
+  //             prefixIcon: Padding(// Adds search icon and adjusts size, prefix puts on left                    
+  //                 padding: const EdgeInsets.all(12.0),
+  //                 child: SvgPicture.asset('assets/icons/Search.svg'),
+  //               ),
+  //               // suffixIcon: Container( // Needs container so other object dont get blocked by the row
+  //               //   width: 100,
+  //               //   child: IntrinsicHeight( // Must wrap row inside IntrinsicHeight in order to use divider                 
+  //               //     child: Row( // Row sorts horizontally and will push the line and filter icons together
+  //               //       mainAxisAlignment:
+  //               //           MainAxisAlignment.end, // .end pushes all to the right
+  //               //       children: [
+  //               //         const VerticalDivider(  //Line next to filter icon                                            
+  //               //           color: Colors.black,
+  //               //           indent: 10, // Space from top
+  //               //           endIndent: 10, // Space from bottom
+  //               //           thickness: 0.1,
+  //               //         ),
+  //               //         Padding( // Adds filter icon and adjust size, suffix puts on right                       
+  //               //           padding: const EdgeInsets.all(8.0),
+  //               //           child: SvgPicture.asset('assets/icons/Filter.svg'),
+  //               //         ),
+  //               //       ],
+  //               //     ),
+  //               //   ),
+  //               // ),
+  //               border: OutlineInputBorder(// Rounded edges                      
+  //                   borderRadius: BorderRadius.circular(15),
+  //                   borderSide: BorderSide.none)),
+  //         ),
+  //       );
+  // }
 
   AppBar appBar() {
     return AppBar(
@@ -389,7 +359,7 @@ class _BreakfastPageState extends State<BreakfastPage> {
         'Breakfast',
         style: TextStyle(
           color: Colors.black,
-          fontSize: 18,
+          fontSize: 24,
           fontWeight: FontWeight.bold
         ),
         ),
@@ -415,29 +385,6 @@ class _BreakfastPageState extends State<BreakfastPage> {
         ),
       ),
       ),
-      // actions: [ // Took this out, no need for it
-      //   GestureDetector(
-      //   onTap: (){
-
-      //   },       
-      //   child: Container(
-      //   margin: const EdgeInsets.all(10),
-      //   alignment: Alignment.center,
-      //   width: 37,
-      //   height: 37,
-      //   child: SvgPicture.asset(
-      //     'assets/icons/dots.svg',
-      //     height: 5,
-      //     width: 5,
-        
-      //   ),
-      //   decoration: BoxDecoration(
-      //     color: const Color(0xffF7F8F8),
-      //     borderRadius: BorderRadius.circular(10)
-      //   ),
-      // ),
-      //   ),
-      // ],
     );
   }
 }
