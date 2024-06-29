@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class smoothiesModel{
+class pastaModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   String level;
@@ -9,7 +9,7 @@ class smoothiesModel{
   bool blue;
   Color boxColor;
 
-  smoothiesModel({ // Constructor
+  pastaModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.level,
@@ -19,64 +19,54 @@ class smoothiesModel{
     required this.boxColor
   });
 
-  static List <smoothiesModel> getCategories() {
-    List<smoothiesModel> categories = []; // List to return
+  static List <pastaModel> getCategories() {
+    List<pastaModel> categories = []; // List to return
 
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Green Detox', 
+      pastaModel(
+        name: 'Zucchini Noodles with Pesto and Cherry Tomatoes', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '150kCal', 
+        duration: '15mins', 
+        calorie: '200kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
       )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Berry Protein', 
+      pastaModel(
+        name: 'Spaghetti Squash with Marinara Sauce', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
+        level: 'Medium', 
+        duration: '1hour', 
+        calorie: '150kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Tropical Mango', 
+      pastaModel(
+        name: 'Whole Wheat Pasta with Spinach and Lemon', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '160kCal', 
+        duration: '20mins', 
+        calorie: '250kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Avocado Spinach', 
+      pastaModel(
+        name: 'Shrimp and Asparagus Pasta', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '200kCal', 
+        level: 'Mdeium', 
+        duration: '30mins', 
+        calorie: '300kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
-        )
+      )
     );
-    categories.add( // adds to list
-      smoothiesModel(
-        name: 'Peach and Oat', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
-        blue: true,
-        boxColor: Color(0xff92A3FD)
-        )
-    );
+    
 
     return categories;
 

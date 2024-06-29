@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class smoothiesModel{
+class bulkSmoothiesModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   String level;
@@ -9,7 +9,7 @@ class smoothiesModel{
   bool blue;
   Color boxColor;
 
-  smoothiesModel({ // Constructor
+  bulkSmoothiesModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.level,
@@ -19,60 +19,49 @@ class smoothiesModel{
     required this.boxColor
   });
 
-  static List <smoothiesModel> getCategories() {
-    List<smoothiesModel> categories = []; // List to return
+  static List <bulkSmoothiesModel> getCategories() {
+    List<bulkSmoothiesModel> categories = []; // List to return
 
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Green Detox', 
+      bulkSmoothiesModel(
+        name: 'Banana Peanut Butter Smoothie', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
         duration: '5mins', 
-        calorie: '150kCal', 
+        calorie: '600kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
       )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Berry Protein', 
+      bulkSmoothiesModel(
+        name: 'Chocolate Banana Protein Smoothie', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
         duration: '5mins', 
-        calorie: '180kCal', 
+        calorie: '550kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Tropical Mango', 
+      bulkSmoothiesModel(
+        name: 'Mango Coconut Smoothie', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
         duration: '5mins', 
-        calorie: '160kCal', 
+        calorie: '500kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Avocado Spinach', 
+      bulkSmoothiesModel(
+        name: 'Berry Banana Avocado Smoothie', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
         duration: '5mins', 
-        calorie: '200kCal', 
-        blue: true,
-        boxColor: Color(0xff92A3FD)
-        )
-    );
-    categories.add( // adds to list
-      smoothiesModel(
-        name: 'Peach and Oat', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
+        calorie: '550kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
         )

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class smoothiesModel{
+class bulkPancakesModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   String level;
@@ -9,7 +9,7 @@ class smoothiesModel{
   bool blue;
   Color boxColor;
 
-  smoothiesModel({ // Constructor
+  bulkPancakesModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.level,
@@ -19,64 +19,54 @@ class smoothiesModel{
     required this.boxColor
   });
 
-  static List <smoothiesModel> getCategories() {
-    List<smoothiesModel> categories = []; // List to return
+  static List <bulkPancakesModel> getCategories() {
+    List<bulkPancakesModel> categories = []; // List to return
 
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Green Detox', 
+      bulkPancakesModel(
+        name: 'Classic Buttermilk Pancakes', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '150kCal', 
+        duration: '20mins', 
+        calorie: '400kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
       )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Berry Protein', 
+      bulkPancakesModel(
+        name: 'Blueberry Oatmeal Pancakes', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
+        duration: '25mins', 
+        calorie: '450kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Tropical Mango', 
+      bulkPancakesModel(
+        name: 'Chocolate Chip Waffles', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '160kCal', 
+        level: 'Medium', 
+        duration: '30mins', 
+        calorie: '500kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Avocado Spinach', 
+      bulkPancakesModel(
+        name: 'Blueberry Buttermilk Waffles', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '200kCal', 
+        level: 'Medium', 
+        duration: '30mins', 
+        calorie: '300kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
-        )
+      )
     );
-    categories.add( // adds to list
-      smoothiesModel(
-        name: 'Peach and Oat', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
-        blue: true,
-        boxColor: Color(0xff92A3FD)
-        )
-    );
+
 
     return categories;
 

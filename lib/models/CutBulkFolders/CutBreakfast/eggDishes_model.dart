@@ -47,11 +47,11 @@ class eggDishesModel{
     categories.add( // adds to list
       eggDishesModel(
         name: 'Egg White Frittata with Vegetables', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: '/Users/ezragillooly/Desktop/VSCODE/FlutterApp/fitness/assets/icons/avocado-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '20mins', 
         calorie: '120kCal', 
-        blue: true,
+        blue: false,
         boxColor: Color(0xffC58BF2)
       )
     );
@@ -62,7 +62,7 @@ class eggDishesModel{
         level: 'Easy', 
         duration: '25mins', 
         calorie: '150kCal', 
-        blue: false,
+        blue: true,
         boxColor: Color(0xff92A3FD)
         )
     );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class smoothiesModel{
+class riceModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   String level;
@@ -9,7 +9,7 @@ class smoothiesModel{
   bool blue;
   Color boxColor;
 
-  smoothiesModel({ // Constructor
+  riceModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.level,
@@ -19,63 +19,52 @@ class smoothiesModel{
     required this.boxColor
   });
 
-  static List <smoothiesModel> getCategories() {
-    List<smoothiesModel> categories = []; // List to return
+  static List <riceModel> getCategories() {
+    List<riceModel> categories = []; // List to return
 
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Green Detox', 
+      riceModel(
+        name: 'Quinoa Veggie Stir-Fry', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '150kCal', 
+        duration: '20mins', 
+        calorie: '250kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
       )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Berry Protein', 
+      riceModel(
+        name: 'Cauliflower Fried Rice', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
+        duration: '20mins', 
+        calorie: '150kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Tropical Mango', 
+      riceModel(
+        name: 'Brown Rice Black Bean Bowl', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '160kCal', 
+        duration: '25mins', 
+        calorie: '300kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Avocado Spinach', 
+      riceModel(
+        name: 'Barley and Mushroom Pilaf', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
+        level: 'Medium', 
+        duration: '40mins', 
         calorie: '200kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
-        )
-    );
-    categories.add( // adds to list
-      smoothiesModel(
-        name: 'Peach and Oat', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
-        blue: true,
-        boxColor: Color(0xff92A3FD)
-        )
+      )
     );
 
     return categories;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class smoothiesModel{
+class bulkEggDishesModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   String level;
@@ -9,7 +9,7 @@ class smoothiesModel{
   bool blue;
   Color boxColor;
 
-  smoothiesModel({ // Constructor
+  bulkEggDishesModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.level,
@@ -19,64 +19,53 @@ class smoothiesModel{
     required this.boxColor
   });
 
-  static List <smoothiesModel> getCategories() {
-    List<smoothiesModel> categories = []; // List to return
+  static List <bulkEggDishesModel> getCategories() {
+    List<bulkEggDishesModel> categories = []; // List to return
 
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Green Detox', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+      bulkEggDishesModel(
+        name: 'Classic Egg Omelette', 
+        iconPath: 'assets/icons/avocado.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '150kCal', 
+        duration: '10mins', 
+        calorie: '300kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
       )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Berry Protein', 
+      bulkEggDishesModel(
+        name: 'Loaded Breakfast Burrito', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
+        level: 'Medium', 
+        duration: '20mins', 
+        calorie: '500kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Tropical Mango', 
+      bulkEggDishesModel(
+        name: 'Egg and Avocado Toast', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '160kCal', 
+        level: 'Medium', 
+        duration: '10mins', 
+        calorie: '400kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
-        )
+      )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Avocado Spinach', 
+      bulkEggDishesModel(
+        name: 'Protein-Packed Scramble', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '200kCal', 
+        duration: '15mins', 
+        calorie: '450kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
         )
-    );
-    categories.add( // adds to list
-      smoothiesModel(
-        name: 'Peach and Oat', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
-        blue: true,
-        boxColor: Color(0xff92A3FD)
-        )
-    );
+    );   
 
     return categories;
 

@@ -1,6 +1,6 @@
 
 
-class cDinnerPopularModel{
+class bulkDinnerPopularModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   String level;
@@ -8,7 +8,7 @@ class cDinnerPopularModel{
   String calorie;
   bool boxIsSelected;
 
-  cDinnerPopularModel({ // Constructor
+  bulkDinnerPopularModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.level,
@@ -17,11 +17,11 @@ class cDinnerPopularModel{
     required this.boxIsSelected,
   });
 
-  static List <cDinnerPopularModel> getPopularDiets(){
-    List <cDinnerPopularModel> popularDiets = [];
+  static List <bulkDinnerPopularModel> getPopularDiets(){
+    List <bulkDinnerPopularModel> popularDiets = [];
 
     popularDiets.add(
-      cDinnerPopularModel(
+      bulkDinnerPopularModel(
         name: 'Blueberry Pancake', 
         iconPath: 'assets/icons/blueberry-pancake.svg', 
         level: 'Medium', 
@@ -32,7 +32,7 @@ class cDinnerPopularModel{
         )
     );
     popularDiets.add(
-      cDinnerPopularModel(
+      bulkDinnerPopularModel(
         name: 'Salmon Nigiri', 
         iconPath: 'assets/icons/salmon-nigiri.svg', 
         level: 'Easy', 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class smoothiesModel{
+class bulkFruitDishesModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   String level;
@@ -9,7 +9,7 @@ class smoothiesModel{
   bool blue;
   Color boxColor;
 
-  smoothiesModel({ // Constructor
+  bulkFruitDishesModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.level,
@@ -19,63 +19,63 @@ class smoothiesModel{
     required this.boxColor
   });
 
-  static List <smoothiesModel> getCategories() {
-    List<smoothiesModel> categories = []; // List to return
+  static List <bulkFruitDishesModel> getCategories() {
+    List<bulkFruitDishesModel> categories = []; // List to return
 
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Green Detox', 
+      bulkFruitDishesModel(
+        name: 'Banana and Peanut Butter Smoothie Bowl', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '150kCal', 
+        duration: '10mins', 
+        calorie: '500kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
       )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Berry Protein', 
+      bulkFruitDishesModel(
+        name: 'Mixed Berry Yogurt Parfait', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
+        duration: '10mins', 
+        calorie: '400kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Tropical Mango', 
+      bulkFruitDishesModel(
+        name: 'Fruit Sald with Honey-Lime Dressing', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '160kCal', 
+        duration: '15mins', 
+        calorie: '300kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Avocado Spinach', 
+      bulkFruitDishesModel(
+        name: 'Grilled Fruit Skewers with Yogurt Dip', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '200kCal', 
+        level: 'Medium', 
+        duration: '20mins', 
+        calorie: '350kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
-        )
+      )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Peach and Oat', 
+      bulkFruitDishesModel(
+        name: 'Mango and Coconut Chia Pudding', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
+        level: 'Medium', 
+        duration: '20mins', 
+        calorie: '450kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
-        )
+      )
     );
 
     return categories;

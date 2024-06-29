@@ -1,15 +1,15 @@
-import 'package:fitness/CutPages/fruit_page.dart';
-import 'package:fitness/pages/bulk_breakfast.dart';
-import 'package:fitness/pages/bulk_dinner.dart';
-import 'package:fitness/pages/bulk_lunch.dart';
-import 'package:fitness/pages/bulking.dart';
-import 'package:fitness/pages/cut_dinner.dart';
-import 'package:fitness/pages/cut_lunch.dart';
-import 'package:fitness/pages/cutting.dart';
-import 'package:fitness/pages/home.dart';
+import 'package:fitness/CutPages/Breakfast/fruit_page.dart';
+import 'package:fitness/MainPages/bulk_breakfast.dart';
+import 'package:fitness/MainPages/bulk_dinner.dart';
+import 'package:fitness/MainPages/bulk_lunch.dart';
+import 'package:fitness/MainPages/bulking.dart';
+import 'package:fitness/MainPages/cut_dinner.dart';
+import 'package:fitness/MainPages/cut_lunch.dart';
+import 'package:fitness/MainPages/cutting.dart';
+import 'package:fitness/MainPages/home.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/cut_breakfast.dart';
+import 'MainPages/cut_breakfast.dart';
 
 void main() {
   runApp(const MyApp());

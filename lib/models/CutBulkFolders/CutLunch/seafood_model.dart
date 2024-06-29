@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class smoothiesModel{
+class seafoodModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   String level;
@@ -9,7 +9,7 @@ class smoothiesModel{
   bool blue;
   Color boxColor;
 
-  smoothiesModel({ // Constructor
+  seafoodModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.level,
@@ -19,63 +19,63 @@ class smoothiesModel{
     required this.boxColor
   });
 
-  static List <smoothiesModel> getCategories() {
-    List<smoothiesModel> categories = []; // List to return
+  static List <seafoodModel> getCategories() {
+    List<seafoodModel> categories = []; // List to return
 
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Green Detox', 
+      seafoodModel(
+        name: 'Grilled Lemon Garlic Shrimp', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
+        duration: '15mins', 
         calorie: '150kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
       )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Berry Protein', 
+      seafoodModel(
+        name: 'Baked Cod and Tomatoes with Basil', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
+        duration: '20mins', 
         calorie: '180kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Tropical Mango', 
+      seafoodModel(
+        name: 'Spicy Tuna Lettuce Wraps', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '160kCal', 
+        duration: '10mins', 
+        calorie: '200kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Avocado Spinach', 
+      seafoodModel(
+        name: 'Broiled Salmon with Dill Yogurt Sauce', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
+        duration: '20mins', 
+        calorie: '250kCal', 
+        blue: true,
+        boxColor: Color(0xff92A3FD)
+      )
+    );
+    categories.add( // adds to list
+      seafoodModel(
+        name: 'Shrimp and Avocado Salad', 
+        iconPath: 'assets/icons/honey-pancakes.svg', 
+        level: 'Easy', 
+        duration: '10mins', 
         calorie: '200kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
-        )
-    );
-    categories.add( // adds to list
-      smoothiesModel(
-        name: 'Peach and Oat', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
-        blue: true,
-        boxColor: Color(0xff92A3FD)
-        )
+      )
     );
 
     return categories;

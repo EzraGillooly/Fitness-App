@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class smoothiesModel{
+class casseroleModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   String level;
@@ -9,7 +9,7 @@ class smoothiesModel{
   bool blue;
   Color boxColor;
 
-  smoothiesModel({ // Constructor
+  casseroleModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.level,
@@ -19,63 +19,52 @@ class smoothiesModel{
     required this.boxColor
   });
 
-  static List <smoothiesModel> getCategories() {
-    List<smoothiesModel> categories = []; // List to return
+  static List <casseroleModel> getCategories() {
+    List<casseroleModel> categories = []; // List to return
 
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Green Detox', 
+      casseroleModel(
+        name: 'Chicken and Vegetable Quinoa Casserole', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '150kCal', 
+        level: 'Mdeium', 
+        duration: '45mins', 
+        calorie: '300kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
       )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Berry Protein', 
+      casseroleModel(
+        name: 'Cauliflower and Ground Turkey Casserole', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
+        level: 'Medium', 
+        duration: '50mins', 
+        calorie: '250kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Tropical Mango', 
+      casseroleModel(
+        name: 'Spinach and Mushroom Egg Casserole', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
         level: 'Easy', 
-        duration: '5mins', 
-        calorie: '160kCal', 
-        blue: false,
-        boxColor: Color(0xffC58BF2)
-        )
-    );
-    categories.add( // adds to list
-      smoothiesModel(
-        name: 'Avocado Spinach', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
+        duration: '40mins', 
         calorie: '200kCal', 
-        blue: true,
-        boxColor: Color(0xff92A3FD)
+        blue: false,
+        boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      smoothiesModel(
-        name: 'Peach and Oat', 
+      casseroleModel(
+        name: 'Turkey and Sweet Potato Casserole', 
         iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '5mins', 
-        calorie: '180kCal', 
+        level: 'Mdeium', 
+        duration: '50mins', 
+        calorie: '280kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
-        )
+      )
     );
 
     return categories;

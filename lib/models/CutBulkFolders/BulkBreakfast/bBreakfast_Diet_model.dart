@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-class cDinnerDietModel{
+class bulkBreakfastDietModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   String level;
@@ -10,7 +10,7 @@ class cDinnerDietModel{
   bool viewIsSelected;
   Color boxColor;
 
-  cDinnerDietModel({ // Constructor
+  bulkBreakfastDietModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.level,
@@ -20,13 +20,13 @@ class cDinnerDietModel{
     required this.boxColor
   });
 
-  static List <cDinnerDietModel> getDiets(){
-    List <cDinnerDietModel> diets = [];
+  static List <bulkBreakfastDietModel> getDiets(){
+    List <bulkBreakfastDietModel> diets = [];
 
     diets.add(
-      cDinnerDietModel(
+      bulkBreakfastDietModel(
         name: 'Honey Pancake', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/steak-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '30mins', 
         calorie: '180kCal', 
@@ -36,7 +36,7 @@ class cDinnerDietModel{
         )
     );
     diets.add(
-      cDinnerDietModel(
+      bulkBreakfastDietModel(
         name: 'Canai Bread', 
         iconPath: 'assets/icons/canai-bread.svg', 
         level: 'Easy', 

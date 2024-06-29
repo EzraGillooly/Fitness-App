@@ -1,63 +1,63 @@
-import 'package:fitness/CutPages/Breakfast/eggs_page.dart';
-import 'package:fitness/CutPages/Breakfast/fruit_page.dart';
-import 'package:fitness/CutPages/Breakfast/meats_page.dart';
-import 'package:fitness/CutPages/Breakfast/pancakes_page.dart';
-import 'package:fitness/CutPages/Breakfast/smoothies_page.dart';
+import 'package:fitness/BulkPages/Breakfast/eggs_page.dart';
+import 'package:fitness/BulkPages/Breakfast/fruit_page.dart';
+import 'package:fitness/BulkPages/Breakfast/meats_page.dart';
+import 'package:fitness/BulkPages/Breakfast/pancakes_page.dart';
+import 'package:fitness/BulkPages/Breakfast/smoothies_page.dart';
 import 'package:flutter/material.dart';
 
-class CategoryModel{
+class bulkBreakfastCategoryModel{
   String name;
   String iconPath; // Icon needs to be string to access path
   var pagePath;
   Color boxColor;
 
-  CategoryModel({ // Constructor
+  bulkBreakfastCategoryModel({ // Constructor
     required this.name,
     required this.iconPath,
     required this.pagePath,
     required this.boxColor,
   });
 
-  static List <CategoryModel> getCategories() {
-    List<CategoryModel> categories = []; // List to return
+  static List <bulkBreakfastCategoryModel> getCategories() {
+    List<bulkBreakfastCategoryModel> categories = []; // List to return
 
     categories.add( // adds to list
-      CategoryModel(
+      bulkBreakfastCategoryModel(
         name: 'Fruit Dishes', 
         iconPath: 'assets/icons/plate.svg', 
-        pagePath: cutFruitDishesPage(),
+        pagePath: bulkFruitDishesPage(),
         boxColor: Color(0xff92A3FD)
         )
     );
     categories.add( // adds to list
-      CategoryModel(
+      bulkBreakfastCategoryModel(
         name: 'Egg Dishes', 
         iconPath: 'assets/icons/pancakes.svg', 
-        pagePath: cutEggDishesPage(),
+        pagePath: bulkEggDishesPage(),
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      CategoryModel(
+      bulkBreakfastCategoryModel(
         name: 'Pancakes and Waffles', 
         iconPath: 'assets/icons/pie.svg', 
-        pagePath: cutPancakesPage(),
+        pagePath: bulkPancakesPage(),
         boxColor: Color(0xff92A3FD)
         )
     );
     categories.add( // adds to list
-      CategoryModel(
+      bulkBreakfastCategoryModel(
         name: 'Smoothies', 
         iconPath: 'assets/icons/orange-snacks.svg', 
-        pagePath: cutSmoothiesPage(),
+        pagePath: bulkSmoothiesPage(),
         boxColor: Color(0xffC58BF2)
         )
     );
     categories.add( // adds to list
-      CategoryModel(
+      bulkBreakfastCategoryModel(
         name: 'Meats and Proteins', 
         iconPath: 'assets/icons/orange-snacks.svg', 
-        pagePath: cutMeatsPage(),
+        pagePath: bulkMeatsPage(),
         boxColor: Color(0xff92A3FD)
         )
     );
