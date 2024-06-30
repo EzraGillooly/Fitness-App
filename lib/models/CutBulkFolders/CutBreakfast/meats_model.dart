@@ -25,7 +25,7 @@ class meatsModel{
     categories.add( // adds to list
       meatsModel(
         name: 'Egg and Ham Wrap', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/ham-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '15mins', 
         calorie: '250kCal', 
@@ -36,7 +36,7 @@ class meatsModel{
     categories.add( // adds to list
       meatsModel(
         name: 'Smoked Salmon and Avocado Toast', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/salmon-svgrepo-com (1).svg', 
         level: 'Easy', 
         duration: '10mins', 
         calorie: '250kCal', 
@@ -47,7 +47,7 @@ class meatsModel{
     categories.add( // adds to list
       meatsModel(
         name: 'Chicken Sausage Scramble', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/sausage-butcher-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '15mins', 
         calorie: '220kCal', 
@@ -58,7 +58,7 @@ class meatsModel{
     categories.add( // adds to list
       meatsModel(
         name: 'Turkey Bacon Egg Breakfast Sandwich', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/bacon-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '15mins', 
         calorie: '250kCal', 

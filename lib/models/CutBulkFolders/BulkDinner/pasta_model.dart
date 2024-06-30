@@ -25,7 +25,7 @@ class bulkPastaModel{
     categories.add( // adds to list
       bulkPastaModel(
         name: 'Creamy Chicken Alfredo', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/pasta-svgrepo-com (1).svg', 
         level: 'Medium', 
         duration: '35mins', 
         calorie: '800kCal', 
@@ -36,7 +36,7 @@ class bulkPastaModel{
     categories.add( // adds to list
       bulkPastaModel(
         name: 'Spaghetti Carbonara', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/spaghetti-pasta-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '25mina', 
         calorie: '700kCal', 
@@ -47,7 +47,7 @@ class bulkPastaModel{
     categories.add( // adds to list
       bulkPastaModel(
         name: 'Baked Ziti', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/lasagna-svgrepo-com (1).svg', 
         level: 'Medium', 
         duration: '1hour', 
         calorie: '850kCal', 

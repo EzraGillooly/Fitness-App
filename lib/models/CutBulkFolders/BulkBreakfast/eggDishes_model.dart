@@ -25,7 +25,7 @@ class bulkEggDishesModel{
     categories.add( // adds to list
       bulkEggDishesModel(
         name: 'Classic Egg Omelette', 
-        iconPath: 'assets/icons/avocado.svg', 
+        iconPath: 'assets/icons/fried-egg-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '10mins', 
         calorie: '300kCal', 
@@ -36,7 +36,7 @@ class bulkEggDishesModel{
     categories.add( // adds to list
       bulkEggDishesModel(
         name: 'Loaded Breakfast Burrito', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/burrito-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '20mins', 
         calorie: '500kCal', 
@@ -47,7 +47,7 @@ class bulkEggDishesModel{
     categories.add( // adds to list
       bulkEggDishesModel(
         name: 'Egg and Avocado Toast', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/avocado-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '10mins', 
         calorie: '400kCal', 
@@ -58,7 +58,7 @@ class bulkEggDishesModel{
     categories.add( // adds to list
       bulkEggDishesModel(
         name: 'Protein-Packed Scramble', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/eggs-protein-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '15mins', 
         calorie: '450kCal', 

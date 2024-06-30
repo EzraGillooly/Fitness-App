@@ -25,7 +25,7 @@ class seafoodModel{
     categories.add( // adds to list
       seafoodModel(
         name: 'Grilled Lemon Garlic Shrimp', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/lemon-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '15mins', 
         calorie: '150kCal', 
@@ -36,7 +36,7 @@ class seafoodModel{
     categories.add( // adds to list
       seafoodModel(
         name: 'Baked Cod and Tomatoes with Basil', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/fish-svgrepo-com (1).svg', 
         level: 'Easy', 
         duration: '20mins', 
         calorie: '180kCal', 
@@ -47,7 +47,7 @@ class seafoodModel{
     categories.add( // adds to list
       seafoodModel(
         name: 'Spicy Tuna Lettuce Wraps', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/tuna-svgrepo-com (1).svg', 
         level: 'Easy', 
         duration: '10mins', 
         calorie: '200kCal', 
@@ -58,7 +58,7 @@ class seafoodModel{
     categories.add( // adds to list
       seafoodModel(
         name: 'Broiled Salmon with Dill Yogurt Sauce', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/salmon-svgrepo-com (2).svg', 
         level: 'Easy', 
         duration: '20mins', 
         calorie: '250kCal', 
@@ -69,7 +69,7 @@ class seafoodModel{
     categories.add( // adds to list
       seafoodModel(
         name: 'Shrimp and Avocado Salad', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/shrimp-shrimp-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '10mins', 
         calorie: '200kCal', 

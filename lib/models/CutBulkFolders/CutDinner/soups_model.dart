@@ -24,20 +24,20 @@ class soupsModel{
 
     categories.add( // adds to list
       soupsModel(
-        name: 'Cauliflower Crust Pizza', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Mdeium', 
-        duration: '45mins', 
-        calorie: '250kCal', 
+        name: 'Tomato Basil Soup', 
+        iconPath: 'assets/icons/soup-svgrepo-com (1).svg', 
+        level: 'Easy', 
+        duration: '30mins', 
+        calorie: '150kCal', 
         blue: true,
         boxColor: Color(0xff92A3FD)
       )
     );
     categories.add( // adds to list
       soupsModel(
-        name: 'Zucchini Crust Pizza', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Medium', 
+        name: 'Chicken and Vegetable Soup', 
+        iconPath: 'assets/icons/soup-svgrepo-com (2).svg', 
+        level: 'Easy', 
         duration: '45mins', 
         calorie: '200kCal', 
         blue: false,
@@ -46,11 +46,11 @@ class soupsModel{
     );
     categories.add( // adds to list
       soupsModel(
-        name: 'Whole Wheat Pita Pizza', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
-        level: 'Easy', 
-        duration: '15mins', 
-        calorie: '300kCal', 
+        name: 'Lentil Soup', 
+        iconPath: 'assets/icons/soup-svgrepo-com (3).svg', 
+        level: 'Medium', 
+        duration: '40mins', 
+        calorie: '180kCal', 
         blue: false,
         boxColor: Color(0xffC58BF2)
         )

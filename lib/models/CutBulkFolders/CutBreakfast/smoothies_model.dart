@@ -25,7 +25,7 @@ class smoothiesModel{
     categories.add( // adds to list
       smoothiesModel(
         name: 'Green Detox', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/green-leaves-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '5mins', 
         calorie: '150kCal', 
@@ -36,7 +36,7 @@ class smoothiesModel{
     categories.add( // adds to list
       smoothiesModel(
         name: 'Berry Protein', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/food-berry-blackberry-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '5mins', 
         calorie: '180kCal', 
@@ -47,7 +47,7 @@ class smoothiesModel{
     categories.add( // adds to list
       smoothiesModel(
         name: 'Tropical Mango', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/mango-svgrepo-com (1).svg', 
         level: 'Easy', 
         duration: '5mins', 
         calorie: '160kCal', 
@@ -58,7 +58,7 @@ class smoothiesModel{
     categories.add( // adds to list
       smoothiesModel(
         name: 'Avocado Spinach', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/spinach-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '5mins', 
         calorie: '200kCal', 
@@ -69,7 +69,7 @@ class smoothiesModel{
     categories.add( // adds to list
       smoothiesModel(
         name: 'Peach and Oat', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/peach-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '5mins', 
         calorie: '180kCal', 

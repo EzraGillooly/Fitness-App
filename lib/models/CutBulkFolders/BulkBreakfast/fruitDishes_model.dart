@@ -25,7 +25,7 @@ class bulkFruitDishesModel{
     categories.add( // adds to list
       bulkFruitDishesModel(
         name: 'Banana and Peanut Butter Smoothie Bowl', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/banana-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '10mins', 
         calorie: '500kCal', 
@@ -36,7 +36,7 @@ class bulkFruitDishesModel{
     categories.add( // adds to list
       bulkFruitDishesModel(
         name: 'Mixed Berry Yogurt Parfait', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/blueberries-svgrepo-com (1).svg', 
         level: 'Easy', 
         duration: '10mins', 
         calorie: '400kCal', 
@@ -47,7 +47,7 @@ class bulkFruitDishesModel{
     categories.add( // adds to list
       bulkFruitDishesModel(
         name: 'Fruit Sald with Honey-Lime Dressing', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/honey-pot-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '15mins', 
         calorie: '300kCal', 
@@ -58,7 +58,7 @@ class bulkFruitDishesModel{
     categories.add( // adds to list
       bulkFruitDishesModel(
         name: 'Grilled Fruit Skewers with Yogurt Dip', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/yogurt-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '20mins', 
         calorie: '350kCal', 
@@ -69,7 +69,7 @@ class bulkFruitDishesModel{
     categories.add( // adds to list
       bulkFruitDishesModel(
         name: 'Mango and Coconut Chia Pudding', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/pudding-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '20mins', 
         calorie: '450kCal', 

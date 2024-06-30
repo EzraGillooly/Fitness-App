@@ -25,7 +25,7 @@ class pizzaModel{
     categories.add( // adds to list
       pizzaModel(
         name: 'Cauliflower Crust Pizza', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/pizza-svgrepo-com (2).svg', 
         level: 'Mdeium', 
         duration: '45mins', 
         calorie: '250kCal', 
@@ -36,7 +36,7 @@ class pizzaModel{
     categories.add( // adds to list
       pizzaModel(
         name: 'Zucchini Crust Pizza', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/pizza-svgrepo-com (3).svg', 
         level: 'Medium', 
         duration: '45mins', 
         calorie: '200kCal', 
@@ -47,7 +47,7 @@ class pizzaModel{
     categories.add( // adds to list
       pizzaModel(
         name: 'Whole Wheat Pita Pizza', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/pizza-svgrepo-com (4).svg', 
         level: 'Easy', 
         duration: '15mins', 
         calorie: '300kCal', 

@@ -162,7 +162,11 @@ class _bulkLunchPageState extends State<bulkLunchPage> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          SvgPicture.asset(diets[index].iconPath),
+                          SvgPicture.asset(
+                            diets[index].iconPath,
+                            height: 100, width: 100,
+                            fit: BoxFit.scaleDown
+                            ),
                           Text(
                             diets[index].name,
                             style: const TextStyle(

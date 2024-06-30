@@ -24,7 +24,7 @@ class CategoryModel{
     categories.add( // adds to list
       CategoryModel(
         name: 'Fruit Dishes', 
-        iconPath: 'assets/icons/plate.svg', 
+        iconPath: 'assets/icons/orange-snacks.svg', 
         pagePath: cutFruitDishesPage(),
         boxColor: Color(0xff92A3FD)
         )
@@ -32,7 +32,7 @@ class CategoryModel{
     categories.add( // adds to list
       CategoryModel(
         name: 'Egg Dishes', 
-        iconPath: 'assets/icons/pancakes.svg', 
+        iconPath: 'assets/icons/fried-egg-svgrepo-com.svg', 
         pagePath: cutEggDishesPage(),
         boxColor: Color(0xffC58BF2)
         )
@@ -40,7 +40,7 @@ class CategoryModel{
     categories.add( // adds to list
       CategoryModel(
         name: 'Pancakes and Waffles', 
-        iconPath: 'assets/icons/pie.svg', 
+        iconPath: 'assets/icons/honey-pancakes.svg', 
         pagePath: cutPancakesPage(),
         boxColor: Color(0xff92A3FD)
         )
@@ -48,7 +48,7 @@ class CategoryModel{
     categories.add( // adds to list
       CategoryModel(
         name: 'Smoothies', 
-        iconPath: 'assets/icons/orange-snacks.svg', 
+        iconPath: 'assets/icons/smoothie-svgrepo-com.svg', 
         pagePath: cutSmoothiesPage(),
         boxColor: Color(0xffC58BF2)
         )
@@ -56,7 +56,7 @@ class CategoryModel{
     categories.add( // adds to list
       CategoryModel(
         name: 'Meats and Proteins', 
-        iconPath: 'assets/icons/orange-snacks.svg', 
+        iconPath: 'assets/icons/steak-svgrepo-com (1).svg', 
         pagePath: cutMeatsPage(),
         boxColor: Color(0xff92A3FD)
         )

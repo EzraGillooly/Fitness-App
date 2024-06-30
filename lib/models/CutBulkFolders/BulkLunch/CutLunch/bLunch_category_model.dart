@@ -24,7 +24,7 @@ class bulkLunchCategoriesModel{
     categories.add( // adds to list
       bulkLunchCategoriesModel(
         name: 'Sandwiches and Wraps', 
-        iconPath: 'assets/icons/plate.svg', 
+        iconPath: 'assets/icons/sandwich-svgrepo-com (1).svg', 
         pagePath: bulkSandwichPage(),
         boxColor: Color(0xff92A3FD)
         )
@@ -32,7 +32,7 @@ class bulkLunchCategoriesModel{
     categories.add( // adds to list
       bulkLunchCategoriesModel(
         name: 'Grain and Rice Dishes', 
-        iconPath: 'assets/icons/pancakes.svg', 
+        iconPath: 'assets/icons/rice-svgrepo-com.svg', 
         pagePath: bulkRicePage(),
         boxColor: Color(0xffC58BF2)
         )
@@ -40,7 +40,7 @@ class bulkLunchCategoriesModel{
     categories.add( // adds to list
       bulkLunchCategoriesModel(
         name: 'Flatbreads and Pizzas', 
-        iconPath: 'assets/icons/pie.svg', 
+        iconPath: 'assets/icons/pizza-svgrepo-com.svg', 
         pagePath: bulkPizzaPage(),
         boxColor: Color(0xffC58BF2)
         )
@@ -48,7 +48,7 @@ class bulkLunchCategoriesModel{
     categories.add( // adds to list
       bulkLunchCategoriesModel(
         name: 'Seafood Dishes', 
-        iconPath: 'assets/icons/orange-snacks.svg', 
+        iconPath: 'assets/icons/fish-svgrepo-com.svg', 
         pagePath: bulkSeafoodPage(),
         boxColor: Color(0xff92A3FD)
         )

@@ -25,7 +25,7 @@ class eggDishesModel{
     categories.add( // adds to list
       eggDishesModel(
         name: 'Scrambled Eggs', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/fried-eggs-egg-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '10mins', 
         calorie: '150kCal', 
@@ -36,7 +36,7 @@ class eggDishesModel{
     categories.add( // adds to list
       eggDishesModel(
         name: 'Veggie Omelet', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/omelette-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '15mins', 
         calorie: '200kCal', 
@@ -47,7 +47,7 @@ class eggDishesModel{
     categories.add( // adds to list
       eggDishesModel(
         name: 'Egg White Frittata with Vegetables', 
-        iconPath: '/Users/ezragillooly/Desktop/VSCODE/FlutterApp/fitness/assets/icons/avocado-svgrepo-com.svg', 
+        iconPath: 'assets/icons/frittata-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '20mins', 
         calorie: '120kCal', 
@@ -58,7 +58,7 @@ class eggDishesModel{
     categories.add( // adds to list
       eggDishesModel(
         name: 'Baked Eggs in Tomatoes', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/tomatoes-cherry-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '25mins', 
         calorie: '150kCal', 
@@ -69,7 +69,7 @@ class eggDishesModel{
     categories.add( // adds to list
       eggDishesModel(
         name: 'Poached Eggs with Avocado', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/avocado-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '15mins', 
         calorie: '220kCal', 

@@ -24,7 +24,7 @@ class bulkBreakfastCategoryModel{
     categories.add( // adds to list
       bulkBreakfastCategoryModel(
         name: 'Fruit Dishes', 
-        iconPath: 'assets/icons/plate.svg', 
+        iconPath: 'assets/icons/blueberries-svgrepo-com.svg', 
         pagePath: bulkFruitDishesPage(),
         boxColor: Color(0xff92A3FD)
         )
@@ -32,7 +32,7 @@ class bulkBreakfastCategoryModel{
     categories.add( // adds to list
       bulkBreakfastCategoryModel(
         name: 'Egg Dishes', 
-        iconPath: 'assets/icons/pancakes.svg', 
+        iconPath: 'assets/icons/fried-egg-svgrepo-com.svg', 
         pagePath: bulkEggDishesPage(),
         boxColor: Color(0xffC58BF2)
         )
@@ -40,7 +40,7 @@ class bulkBreakfastCategoryModel{
     categories.add( // adds to list
       bulkBreakfastCategoryModel(
         name: 'Pancakes and Waffles', 
-        iconPath: 'assets/icons/pie.svg', 
+        iconPath: 'assets/icons/blueberry-pancake.svg', 
         pagePath: bulkPancakesPage(),
         boxColor: Color(0xff92A3FD)
         )
@@ -48,7 +48,7 @@ class bulkBreakfastCategoryModel{
     categories.add( // adds to list
       bulkBreakfastCategoryModel(
         name: 'Smoothies', 
-        iconPath: 'assets/icons/orange-snacks.svg', 
+        iconPath: 'assets/icons/smoothie-svgrepo-com.svg', 
         pagePath: bulkSmoothiesPage(),
         boxColor: Color(0xffC58BF2)
         )
@@ -56,7 +56,7 @@ class bulkBreakfastCategoryModel{
     categories.add( // adds to list
       bulkBreakfastCategoryModel(
         name: 'Meats and Proteins', 
-        iconPath: 'assets/icons/orange-snacks.svg', 
+        iconPath: 'assets/icons/steak-svgrepo-com.svg', 
         pagePath: bulkMeatsPage(),
         boxColor: Color(0xff92A3FD)
         )

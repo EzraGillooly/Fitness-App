@@ -24,7 +24,7 @@ class cLunchCategoryModel{
     categories.add( // adds to list
       cLunchCategoryModel(
         name: 'Sandwiches and Wraps', 
-        iconPath: 'assets/icons/plate.svg', 
+        iconPath: 'assets/icons/sandwich-svgrepo-com.svg', 
         pagePath: cutSandwichPage(),
         boxColor: Color(0xff92A3FD)
         )
@@ -32,7 +32,7 @@ class cLunchCategoryModel{
     categories.add( // adds to list
       cLunchCategoryModel(
         name: 'Grain and Rice Dishes', 
-        iconPath: 'assets/icons/pancakes.svg', 
+        iconPath: 'assets/icons/rice-svgrepo-com.svg', 
         pagePath: cutRicePage(),
         boxColor: Color(0xffC58BF2)
         )
@@ -40,7 +40,7 @@ class cLunchCategoryModel{
     categories.add( // adds to list
       cLunchCategoryModel(
         name: 'Flatbreads and Pizzas', 
-        iconPath: 'assets/icons/pie.svg', 
+        iconPath: 'assets/icons/pizza-svgrepo-com.svg', 
         pagePath: cutPizzaPage(),
         boxColor: Color(0xffC58BF2)
         )
@@ -48,7 +48,7 @@ class cLunchCategoryModel{
     categories.add( // adds to list
       cLunchCategoryModel(
         name: 'Seafood Dishes', 
-        iconPath: 'assets/icons/orange-snacks.svg', 
+        iconPath: 'assets/icons/fish-svgrepo-com.svg', 
         pagePath: cutSeafoodPage(),
         boxColor: Color(0xff92A3FD)
         )

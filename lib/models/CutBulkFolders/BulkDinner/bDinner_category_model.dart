@@ -24,7 +24,7 @@ class bulkDinnerCategoriesModel{
     categories.add( // adds to list
       bulkDinnerCategoriesModel(
         name: 'BBQ', 
-        iconPath: 'assets/icons/plate.svg', 
+        iconPath: 'assets/icons/bbq-barbecue-cook-svgrepo-com.svg', 
         pagePath: bulkBbqPage(),
         boxColor: Color(0xff92A3FD)
         )
@@ -32,7 +32,7 @@ class bulkDinnerCategoriesModel{
     categories.add( // adds to list
       bulkDinnerCategoriesModel(
         name: 'Casseroles', 
-        iconPath: 'assets/icons/pancakes.svg', 
+        iconPath: 'assets/icons/casserole-svgrepo-com.svg', 
         pagePath: bulkCasserolePage(),
         boxColor: Color(0xffC58BF2)
         )
@@ -40,7 +40,7 @@ class bulkDinnerCategoriesModel{
     categories.add( // adds to list
       bulkDinnerCategoriesModel(
         name: 'Pastas', 
-        iconPath: 'assets/icons/pie.svg', 
+        iconPath: 'assets/icons/pasta-svgrepo-com.svg', 
         pagePath: bulkPastaPage(),
         boxColor: Color(0xffC58BF2)
         )
@@ -48,7 +48,7 @@ class bulkDinnerCategoriesModel{
     categories.add( // adds to list
       bulkDinnerCategoriesModel(
         name: 'Soups', 
-        iconPath: 'assets/icons/orange-snacks.svg', 
+        iconPath: 'assets/icons/soup-svgrepo-com.svg', 
         pagePath: bulkSoupsPage(),
         boxColor: Color(0xff92A3FD)
         )

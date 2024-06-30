@@ -25,7 +25,7 @@ class bbqModel{
     categories.add( // adds to list
       bbqModel(
         name: 'Grilled Chicken Skewers', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/yakitori-skewered-chicken-grilled-japanese-satay-japanese-cuisine-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '30mins', 
         calorie: '150kCal', 
@@ -36,7 +36,7 @@ class bbqModel{
     categories.add( // adds to list
       bbqModel(
         name: 'Grilled Salmon with Herb Marinade', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/salmon-fish-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '20mins', 
         calorie: '200kCal', 
@@ -47,7 +47,7 @@ class bbqModel{
     categories.add( // adds to list
       bbqModel(
         name: 'BBQ Turkey Burgers', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/burger-huge-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '20mins', 
         calorie: '200kCal', 
@@ -58,7 +58,7 @@ class bbqModel{
     categories.add( // adds to list
       bbqModel(
         name: 'BBQ Shrimp Skewers', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/shrimp-svgrepo-com (1).svg', 
         level: 'Easy', 
         duration: '15mins', 
         calorie: '150kCal', 

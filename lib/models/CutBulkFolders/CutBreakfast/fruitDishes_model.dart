@@ -25,7 +25,7 @@ class fruitDishesModel{
     categories.add( // adds to list
       fruitDishesModel(
         name: 'Fresh Fruit Salad', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/fruit-salad-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '10mins', 
         calorie: '100kCal', 
@@ -36,7 +36,7 @@ class fruitDishesModel{
     categories.add( // adds to list
       fruitDishesModel(
         name: 'Berry Parfait', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/food-fruit-vegetable-vegetarian-organic-berry-blueberry-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '5mins', 
         calorie: '150kCal', 
@@ -47,7 +47,7 @@ class fruitDishesModel{
     categories.add( // adds to list
       fruitDishesModel(
         name: 'Watermelon Feta Salad', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/watermelon-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '10mins', 
         calorie: '120kCal', 
@@ -58,7 +58,7 @@ class fruitDishesModel{
     categories.add( // adds to list
       fruitDishesModel(
         name: 'Mango Chia Pudding', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/mango-svgrepo-com (1).svg', 
         level: 'Medium', 
         duration: '2hrs', 
         calorie: '200kCal', 

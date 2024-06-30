@@ -25,7 +25,7 @@ class bulkBbqModel{
     categories.add( // adds to list
       bulkBbqModel(
         name: 'Pulled Pork Sandwiches', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/meat-on-bone-svgrepo-com (1).svg', 
         level: 'Medium', 
         duration: '6-8hrs', 
         calorie: '600kCal', 
@@ -36,7 +36,7 @@ class bulkBbqModel{
     categories.add( // adds to list
       bulkBbqModel(
         name: 'Grilled BBQ Chicken', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/chicken-turkey-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '35mins', 
         calorie: '400kCal', 

@@ -25,7 +25,7 @@ class pastaModel{
     categories.add( // adds to list
       pastaModel(
         name: 'Zucchini Noodles with Pesto and Cherry Tomatoes', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/zucchini-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '15mins', 
         calorie: '200kCal', 
@@ -36,7 +36,7 @@ class pastaModel{
     categories.add( // adds to list
       pastaModel(
         name: 'Spaghetti Squash with Marinara Sauce', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/spaghetti-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '1hour', 
         calorie: '150kCal', 
@@ -47,7 +47,7 @@ class pastaModel{
     categories.add( // adds to list
       pastaModel(
         name: 'Whole Wheat Pasta with Spinach and Lemon', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/spaghetti-svgrepo-com (1).svg', 
         level: 'Easy', 
         duration: '20mins', 
         calorie: '250kCal', 
@@ -58,7 +58,7 @@ class pastaModel{
     categories.add( // adds to list
       pastaModel(
         name: 'Shrimp and Asparagus Pasta', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/asparagus-svgrepo-com.svg', 
         level: 'Mdeium', 
         duration: '30mins', 
         calorie: '300kCal', 

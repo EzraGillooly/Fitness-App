@@ -25,7 +25,7 @@ class bulkPizzaModel{
     categories.add( // adds to list
       bulkPizzaModel(
         name: 'Meat Lover\'s Pizza', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/pizza-02-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '1hour', 
         calorie: '900kCal', 
@@ -36,7 +36,7 @@ class bulkPizzaModel{
     categories.add( // adds to list
       bulkPizzaModel(
         name: 'BBQ Chicken Pizza', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/pizza-svgrepo-com (1).svg', 
         level: 'Medium', 
         duration: '45mins', 
         calorie: '200kCal', 

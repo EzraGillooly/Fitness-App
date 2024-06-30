@@ -25,7 +25,7 @@ class bulkSeafoodModel{
     categories.add( // adds to list
       bulkSeafoodModel(
         name: 'Salmon and Avocado Rice Bowl', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/salmon-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '25mins', 
         calorie: '750kCal', 
@@ -36,7 +36,7 @@ class bulkSeafoodModel{
     categories.add( // adds to list
       bulkSeafoodModel(
         name: 'Lobster Mac and Cheese', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/lobster-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '45mins', 
         calorie: '900kCal', 
@@ -47,7 +47,7 @@ class bulkSeafoodModel{
     categories.add( // adds to list
       bulkSeafoodModel(
         name: 'Creamy Shrimp Alfredo', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/shrimp-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '30mins', 
         calorie: '800kCal', 

@@ -25,7 +25,7 @@ class pancakesModel{
     categories.add( // adds to list
       pancakesModel(
         name: 'Whole Wheat Banana Pancakes', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/pancakes-svgrepo-com (2).svg', 
         level: 'Easy', 
         duration: '20mins', 
         calorie: '150kCal', 
@@ -36,7 +36,7 @@ class pancakesModel{
     categories.add( // adds to list
       pancakesModel(
         name: 'Protein Pancakes', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/pancakes-svgrepo-com (1).svg', 
         level: 'Medium', 
         duration: '15mins', 
         calorie: '200kCal', 
@@ -47,7 +47,7 @@ class pancakesModel{
     categories.add( // adds to list
       pancakesModel(
         name: 'Blueberry Oatmeal Waffles', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/waffles-svgrepo-com (1).svg', 
         level: 'Medium', 
         duration: '15mins', 
         calorie: '200kCal', 
@@ -58,7 +58,7 @@ class pancakesModel{
     categories.add( // adds to list
       pancakesModel(
         name: 'Greek Yogurt Waffles', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/waffle-svgrepo-com (1).svg', 
         level: 'Medium', 
         duration: '20mins', 
         calorie: '200kCal', 

@@ -63,7 +63,10 @@ class bulkMeatsPage extends StatefulWidget {
                   child: Column( // Holds all the items within the grids
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      SvgPicture.asset(meatDishes[index].iconPath),
+                      SvgPicture.asset(meatDishes[index].iconPath,
+                      height: 80, width: 100,
+                      fit: BoxFit.scaleDown
+                      ),
                       Padding(
                         padding: const EdgeInsets.only(left:2.0,right:2.0),
                         child: Text(

@@ -25,7 +25,7 @@ class bulkSandwichesModel{
     categories.add( // adds to list
       bulkSandwichesModel(
         name: 'Steak and Cheese Sandwich', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/steak-svgrepo-com (1).svg', 
         level: 'Easy', 
         duration: '30mins', 
         calorie: '900kCal', 
@@ -36,7 +36,7 @@ class bulkSandwichesModel{
     categories.add( // adds to list
       bulkSandwichesModel(
         name: 'Classic Club Sandwich', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/sandwich-svgrepo-com (2).svg', 
         level: 'Easy', 
         duration: '20mins', 
         calorie: '700kCal', 
@@ -47,7 +47,7 @@ class bulkSandwichesModel{
     categories.add( // adds to list
       bulkSandwichesModel(
         name: 'Chicken Avocado Bacon Sandwich', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/sandwich-02-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '25mins', 
         calorie: '850kCal', 

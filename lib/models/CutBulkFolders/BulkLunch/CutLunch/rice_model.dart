@@ -25,7 +25,7 @@ class bulkRiceModel{
     categories.add( // adds to list
       bulkRiceModel(
         name: 'Chicken and Sausage Jambalaya', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/chicken-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '1hour', 
         calorie: '800kCal', 
@@ -36,7 +36,7 @@ class bulkRiceModel{
     categories.add( // adds to list
       bulkRiceModel(
         name: 'Beef and Broccoli Stir-Fry with Rice', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/broccoli-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '30mins', 
         calorie: '700kCal', 
@@ -47,7 +47,7 @@ class bulkRiceModel{
     categories.add( // adds to list
       bulkRiceModel(
         name: 'Creamy Mushroom Risotto', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/mushroom-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '40mins', 
         calorie: '650kCal', 

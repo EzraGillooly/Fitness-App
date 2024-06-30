@@ -25,7 +25,7 @@ class casseroleModel{
     categories.add( // adds to list
       casseroleModel(
         name: 'Chicken and Vegetable Quinoa Casserole', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/cabbage-svgrepo-com.svg', 
         level: 'Mdeium', 
         duration: '45mins', 
         calorie: '300kCal', 
@@ -36,7 +36,7 @@ class casseroleModel{
     categories.add( // adds to list
       casseroleModel(
         name: 'Cauliflower and Ground Turkey Casserole', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/turkey-leg-chicken-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '50mins', 
         calorie: '250kCal', 
@@ -47,7 +47,7 @@ class casseroleModel{
     categories.add( // adds to list
       casseroleModel(
         name: 'Spinach and Mushroom Egg Casserole', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/mushroom-svgrepo-com (1).svg', 
         level: 'Easy', 
         duration: '40mins', 
         calorie: '200kCal', 
@@ -58,7 +58,7 @@ class casseroleModel{
     categories.add( // adds to list
       casseroleModel(
         name: 'Turkey and Sweet Potato Casserole', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/roasted-sweet-potato-svgrepo-com.svg', 
         level: 'Mdeium', 
         duration: '50mins', 
         calorie: '280kCal', 

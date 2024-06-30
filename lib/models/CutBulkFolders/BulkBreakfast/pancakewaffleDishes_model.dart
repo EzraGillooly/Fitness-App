@@ -25,7 +25,7 @@ class bulkPancakesModel{
     categories.add( // adds to list
       bulkPancakesModel(
         name: 'Classic Buttermilk Pancakes', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/pancakes-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '20mins', 
         calorie: '400kCal', 
@@ -36,7 +36,7 @@ class bulkPancakesModel{
     categories.add( // adds to list
       bulkPancakesModel(
         name: 'Blueberry Oatmeal Pancakes', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/blueberry-pancake.svg', 
         level: 'Easy', 
         duration: '25mins', 
         calorie: '450kCal', 
@@ -47,7 +47,7 @@ class bulkPancakesModel{
     categories.add( // adds to list
       bulkPancakesModel(
         name: 'Chocolate Chip Waffles', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/cookie-chocolate-chip-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '30mins', 
         calorie: '500kCal', 
@@ -58,7 +58,7 @@ class bulkPancakesModel{
     categories.add( // adds to list
       bulkPancakesModel(
         name: 'Blueberry Buttermilk Waffles', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/blueberries-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '30mins', 
         calorie: '300kCal', 

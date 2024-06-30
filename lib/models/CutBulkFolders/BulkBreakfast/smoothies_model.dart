@@ -25,7 +25,7 @@ class bulkSmoothiesModel{
     categories.add( // adds to list
       bulkSmoothiesModel(
         name: 'Banana Peanut Butter Smoothie', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/banana-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '5mins', 
         calorie: '600kCal', 
@@ -36,7 +36,7 @@ class bulkSmoothiesModel{
     categories.add( // adds to list
       bulkSmoothiesModel(
         name: 'Chocolate Banana Protein Smoothie', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/smoothie-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '5mins', 
         calorie: '550kCal', 
@@ -47,7 +47,7 @@ class bulkSmoothiesModel{
     categories.add( // adds to list
       bulkSmoothiesModel(
         name: 'Mango Coconut Smoothie', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/mango-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '5mins', 
         calorie: '500kCal', 
@@ -58,7 +58,7 @@ class bulkSmoothiesModel{
     categories.add( // adds to list
       bulkSmoothiesModel(
         name: 'Berry Banana Avocado Smoothie', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/avocado-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '5mins', 
         calorie: '550kCal', 

@@ -25,7 +25,7 @@ class bulkCasseroleModel{
     categories.add( // adds to list
       bulkCasseroleModel(
         name: 'Cheesy Beef and Pasta Casserole', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/cooking-stew-svgrepo-com.svg', 
         level: 'Mdeium', 
         duration: '1hour', 
         calorie: '600kCal', 
@@ -36,7 +36,7 @@ class bulkCasseroleModel{
     categories.add( // adds to list
       bulkCasseroleModel(
         name: 'Chicken and Rice Casserole', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/rice-svgrepo-com (1).svg', 
         level: 'Medium', 
         duration: '75mins', 
         calorie: '700kCal', 

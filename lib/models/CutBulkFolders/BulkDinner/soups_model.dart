@@ -23,9 +23,9 @@ class bulkSoupsModel{
     List<bulkSoupsModel> categories = []; // List to return
 
     categories.add( // adds to list
-      bulkSoupsModel(
+      bulkSoupsModel( 
         name: 'Creamy Potato Bacon Soup', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/potato-svgrepo-com.svg', 
         level: 'Mdeium', 
         duration: '45mins', 
         calorie: '600kCal', 
@@ -36,7 +36,7 @@ class bulkSoupsModel{
     categories.add( // adds to list
       bulkSoupsModel(
         name: 'Hearty Beef Stew', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/stew-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '120mins', 
         calorie: '700kCal', 
@@ -47,7 +47,7 @@ class bulkSoupsModel{
     categories.add( // adds to list
       bulkSoupsModel(
         name: 'Creamy Chicken and Wild Rice Soup', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/soup-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '1hour', 
         calorie: '650kCal', 

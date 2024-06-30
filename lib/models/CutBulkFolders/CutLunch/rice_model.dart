@@ -25,7 +25,7 @@ class riceModel{
     categories.add( // adds to list
       riceModel(
         name: 'Quinoa Veggie Stir-Fry', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/rice-svgrepo-com (2).svg', 
         level: 'Easy', 
         duration: '20mins', 
         calorie: '250kCal', 
@@ -36,7 +36,7 @@ class riceModel{
     categories.add( // adds to list
       riceModel(
         name: 'Cauliflower Fried Rice', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/cauliflower-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '20mins', 
         calorie: '150kCal', 
@@ -47,7 +47,7 @@ class riceModel{
     categories.add( // adds to list
       riceModel(
         name: 'Brown Rice Black Bean Bowl', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/bean-beans-kidney-svgrepo-com.svg', 
         level: 'Easy', 
         duration: '25mins', 
         calorie: '300kCal', 
@@ -58,7 +58,7 @@ class riceModel{
     categories.add( // adds to list
       riceModel(
         name: 'Barley and Mushroom Pilaf', 
-        iconPath: 'assets/icons/honey-pancakes.svg', 
+        iconPath: 'assets/icons/wheat-barley-svgrepo-com.svg', 
         level: 'Medium', 
         duration: '40mins', 
         calorie: '200kCal', 
