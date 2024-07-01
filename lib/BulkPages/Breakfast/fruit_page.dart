@@ -1,6 +1,7 @@
 import 'package:fitness/Models/CutBulkFolders/BulkBreakfast/fruitDishes_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 class bulkFruitDishesPage extends StatefulWidget {
   bulkFruitDishesPage({super.key});
@@ -73,12 +74,9 @@ class _bulkFruitDishesPageState extends State<bulkFruitDishesPage> {
                             fontSize: 15),
                       ),
                     ),
-                    Padding(
-                      // Padding that holds text under title
+                    Padding( // Padding that holds text under title                      
                       padding: const EdgeInsets.only(left: 2.0, right: 2.0),
-                      child: Text(
-                        // Text under food title
-
+                      child: Text( // Text under food title
                         '${fruitDishes[index].level} | ${fruitDishes[index].duration} | ${fruitDishes[index].calorie}',
                         style: const TextStyle(
                             color: Color(0xff7b6f72),
@@ -88,22 +86,29 @@ class _bulkFruitDishesPageState extends State<bulkFruitDishesPage> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        showModalBottomSheet(
+                        showMaterialModalBottomSheet(
                           context: context,
-                          builder: (BuildContext context) {
-                            return SizedBox(
-                              height: 500,
-                              child: Center(
-                                child: ElevatedButton(
-                                  child: const Text('close'),
-                                  onPressed: () {
-                                    Navigator.pop(context);
-                                  },
-                                ),
-                              ),
-                            );
-                          },
-                        );
+                         builder: (context) => SizedBox(
+                          width: 500,
+                          height: 700,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left:20, top:20, right:20),
+                            child: Text( 
+                              'Ingredients: \n'
+                              '${fruitDishes[index].ingredients} \n'
+                              '\n'
+                              'Directions:\n'
+                              '${fruitDishes[index].directions}',
+                              style: const TextStyle(
+                                color: Colors.black,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w400
+                              )                              
+                            ),
+                          ),
+                          ),
+                         );
+                          
                       },
                       child: Container(
                         // Gradient box in bottom of reccomendation box

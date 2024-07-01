@@ -1,6 +1,7 @@
 import 'package:fitness/Models/CutBulkFolders/CutLunch/pizza_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 class cutPizzaPage extends StatefulWidget {
   cutPizzaPage({super.key});
@@ -34,17 +35,14 @@ class cutPizzaPage extends StatefulWidget {
     );
   }
     Column _pizzaDishesSection() {
-    return Column(
-      
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-        Container(
-          height: 625,
+    return Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+      SizedBox(
+        height: 625,
         child: GridView.builder(
           // Adds vertical grid list
           itemCount: pizzaDishes.length,
-          gridDelegate:
-              const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2),
           padding: const EdgeInsets.only(left: 8, right: 8),
           itemBuilder: (context, index) {
             return Padding(
@@ -54,43 +52,67 @@ class cutPizzaPage extends StatefulWidget {
                 width: 50,
                 decoration: BoxDecoration(
                     // Customizes the look of each box
-                    color: pizzaDishes[index].boxColor.withOpacity(0.3), //Adjust color opacity
+                    color: pizzaDishes[index]
+                        .boxColor
+                        .withOpacity(0.3), //Adjust color opacity
                     borderRadius: BorderRadius.circular(16)),
-                child: GestureDetector(
-                  onTap: () {
-                    //
-                  },
-                  child: Column( // Holds all the items within the grids
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      SvgPicture.asset(pizzaDishes[index].iconPath,
-                      height: 80, width: 100,
-                      fit: BoxFit.scaleDown
+                child: Column(
+                  // Holds all the items within every individual grid
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(pizzaDishes[index].iconPath,
+                        height: 70, width: 70, fit: BoxFit.scaleDown),
+                    Padding(
+                      // Padding that holds the pizzaDishes title
+                      padding: const EdgeInsets.only(left: 2.0, right: 2.0),
+                      child: Text(
+                        textAlign: TextAlign.center,
+                        pizzaDishes[index].name,
+                        style: const TextStyle(
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black,
+                            fontSize: 15),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left:2.0,right:2.0),
-                        child: Text(
-                          textAlign: TextAlign.center,
-                          pizzaDishes[index].name,
-                          style: const TextStyle(
-                              fontWeight: FontWeight.w500,
-                              color: Colors.black,
-                              fontSize: 15),
-                        ),
+                    ),
+                    Padding( // Padding that holds text under title                      
+                      padding: const EdgeInsets.only(left: 2.0, right: 2.0),
+                      child: Text( // Text under food title
+                        '${pizzaDishes[index].level} | ${pizzaDishes[index].duration} | ${pizzaDishes[index].calorie}',
+                        style: const TextStyle(
+                            color: Color(0xff7b6f72),
+                            fontSize: 13,
+                            fontWeight: FontWeight.w400),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left:2.0,right:2.0),
-                        child: Text( // Text under food title
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        showMaterialModalBottomSheet(
+                          context: context,
+                         builder: (context) => SizedBox(
+                          width: 500,
+                          height: 800,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left:20, top:20, right:20),
+                            child: Text( 
+                              'Ingredients: \n'
+                              '${pizzaDishes[index].ingredients} \n'
+                              '\n'
+                              'Directions:\n'
+                              '${pizzaDishes[index].directions}',
+                              style: const TextStyle(
+                                color: Colors.black,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400
+                              )                              
+                            ),
+                          ),
+                          ),
+                         );
                           
-                          '${pizzaDishes[index].level} | ${pizzaDishes[index].duration} | ${pizzaDishes[index].calorie}',
-                          style: const TextStyle(
-                              color: Color(0xff7b6f72),
-                              fontSize: 13,
-                              fontWeight: FontWeight.w400),
-                        ),
-                      ),
-                      Container(// Gradient box in bottom of reccomendation box
-                        
+                      },
+                      child: Container(
+                        // Gradient box in bottom of reccomendation box
+
                         height: 25,
                         width: 90,
                         decoration: BoxDecoration(
@@ -111,8 +133,8 @@ class cutPizzaPage extends StatefulWidget {
                                   fontSize: 12)),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             );
@@ -121,40 +143,36 @@ class cutPizzaPage extends StatefulWidget {
       ),
     ]);
   }
-    AppBar appBar(BuildContext context) {
-      return AppBar(
-        shape: Border(bottom: BorderSide(color: Colors.black, width: 1)),
+
+  AppBar appBar(BuildContext context) {
+    return AppBar(
+      shape: Border(bottom: BorderSide(color: Colors.black, width: 1)),
       title: const Text(
-      'Flatbreads and Pizzas',
-      style: TextStyle(
-        color: Colors.black,
-        fontSize: 24,
-        fontWeight: FontWeight.bold
-      ),
+        'Pizzas',
+        style: TextStyle(
+            color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold),
       ),
       backgroundColor: Colors.white,
       elevation: 0.0,
-    centerTitle: true,
-    leading: GestureDetector(
-      onTap: () { // Will direct user back to home page
-            Navigator.pushReplacementNamed(context, '/cutLunchPage');
-      },
-    child: Container(
-      margin: const EdgeInsets.all(10),
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-        color: const Color(0xffF7F8F8),
-        borderRadius: BorderRadius.circular(10)
+      centerTitle: true,
+      leading: GestureDetector(
+        onTap: () {
+          // Will direct user back to home page
+          Navigator.pushReplacementNamed(context, '/cutLunchPage');
+        },
+        child: Container(
+          margin: const EdgeInsets.all(10),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+              color: const Color(0xffF7F8F8),
+              borderRadius: BorderRadius.circular(10)),
+          child: SvgPicture.asset(
+            'assets/icons/Arrow - Left 2.svg',
+            height: 20,
+            width: 20,
+          ),
+        ),
       ),
-      child: SvgPicture.asset(
-        'assets/icons/Arrow - Left 2.svg',
-        height: 20,
-        width: 20,
-      
-      ),
-    ),
-    ),
     );
-    }
-
+  }
 }
